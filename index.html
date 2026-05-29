@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>America's Team</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- INTRO PLEIN ÉCRAN — cliquer ou défiler pour entrer. Géré par script.js (#intro) -->
+  <div id="intro" role="dialog" aria-label="Bienvenue dans mon mémoire">
+    <img src="images/photo0.png" alt="Bienvenue dans mon mémoire, sur la folle histoire de l'America's Team" class="intro-img" />
+    <div class="intro-hint">
+      <span class="intro-hint-text">Cliquez ou défilez pour entrer</span>
+      <span class="intro-hint-arrow" aria-hidden="true">↓</span>
+    </div>
+  </div>
+
+  <div id="patchwork" aria-hidden="true"></div>
+
+  <nav id="navbar">
+    <div class="nav-logo"><span class="nav-star">★</span><span><a href="index.html">America's</a><span> <a href="index.html">Team</a></span></span></div>
+    <ul class="nav-links">
+      <li><a href="introduction.html">Introduction</a></li>
+      <li><a href="introspection.html">Introspection</a></li>
+      <li><a href="#" data-overlay="chap1">Chapitre 1</a></li>
+      <li><a href="#" data-overlay="chap2">Chapitre 2</a></li>
+      <li><a href="#" data-overlay="interview">Interview</a></li>
+      <li><a href="conclusion.html">Conclusion</a></li>
+      <li><a href="bibliographie.html">Bibliographie</a></li>
+    </ul>
+  </nav>
+
+  <div id="overlay" role="dialog" aria-modal="true">
+    <div id="overlay-bg" aria-hidden="true"></div>
+    <div id="overlay-backdrop" aria-hidden="true"></div>
+    <div id="overlay-panel">
+      <button id="overlay-close" class="overlay-close" aria-label="Fermer">✕</button>
+      <p class="overlay-eyebrow">Navigation</p>
+      <h2 class="overlay-title" id="overlay-title"></h2>
+      <div class="overlay-divider"></div>
+      <ul class="overlay-items" id="overlay-items"></ul>
+    </div>
+  </div>
+
+  <button id="scroll-top" aria-label="Retour en haut">↑</button>
+
+  <main class="page">
+    <div class="card-3d">
+      <p class="eyebrow">Dossier — Dallas Cowboys</p>
+      <h1 class="title">America's<br><em>Team</em></h1>
+      <div class="divider"></div>
+      <p class="body-text">
+      </p>
+
+      <ul class="content-nav" style="margin-top:32px;">
+        <li class="plain">
+          <a href="introduction.html">
+            Introduction
+            <span class="nav-arrow">→</span>
+          </a>
+        </li>
+        <li class="plain">
+          <a href="introspection.html">
+            Introspection
+            <span class="nav-arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <span data-overlay="chap1">
+            Chapitre 1
+            <span class="nav-arrow">→</span>
+          </span>
+        </li>
+        <li>
+          <span data-overlay="chap2">
+            Chapitre 2
+            <span class="nav-arrow">→</span>
+          </span>
+        </li>
+        <li>
+          <span data-overlay="interview">
+            Interview
+            <span class="nav-arrow">→</span>
+          </span>
+        </li>
+        <li class="plain">
+          <a href="conclusion.html">
+            Conclusion
+            <span class="nav-arrow">→</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

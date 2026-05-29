@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sous-page — America's Team</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="patchwork" aria-hidden="true"></div>
+  <nav id="navbar">
+    <div class="nav-logo"><span class="nav-star">★</span><span><a href="index.html">America's</a><span> <a href="index.html">Team</a></span></span></div>
+    <ul class="nav-links">
+      <li><a href="introduction.html">Introduction</a></li>
+      <li><a href="introspection.html">Introspection</a></li>
+      <li><a href="#" data-overlay="chap1">Chapitre 1</a></li>
+      <li><a href="#" data-overlay="chap2">Chapitre 2</a></li>
+      <li><a href="#" data-overlay="interview">Interview</a></li>
+      <li><a href="conclusion.html">Conclusion</a></li>
+      <li><a href="bibliographie.html">Bibliographie</a></li>
+    </ul>
+  </nav>
+  <div id="overlay" role="dialog" aria-modal="true">
+    <div id="overlay-bg" aria-hidden="true"></div>
+    <div id="overlay-backdrop" aria-hidden="true"></div>
+    <div id="overlay-panel">
+      <button id="overlay-close" class="overlay-close" aria-label="Fermer">✕</button>
+      <p class="overlay-eyebrow">Navigation</p>
+      <h2 class="overlay-title" id="overlay-title"></h2>
+      <div class="overlay-divider"></div>
+      <ul class="overlay-items" id="overlay-items"></ul>
+    </div>
+  </div>
+  <button id="scroll-top" aria-label="Retour en haut">↑</button>
+  <main class="page">
+    <div class="card-3d">
+      <!-- Adaptez le href selon le chapitre parent -->
+      <a class="back-link" href="index.html"><span class="arrow">←</span> Retour</a>
+      <p class="eyebrow">Chapitre X — Titre de la partie</p>
+      <h2 class="section-title">Titre de la sous-page</h2>
+      <div class="divider"></div>
+      <p class="body-text">
+        Rédigez ici le contenu de cette sous-partie. La mise en page
+        est identique à toutes les autres pages — seul le contenu change.
+      </p>
+      <p class="body-text" style="margin-top:18px;">
+        Ajoutez autant de paragraphes que nécessaire.
+      </p>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
