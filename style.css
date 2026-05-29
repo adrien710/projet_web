@@ -438,7 +438,7 @@ h2.section-title {
 
 .content-nav li:not(.plain) > a::after,
 .content-nav li:not(.plain) > span::after {
-  content: 'VOIR';
+  content: 'Découvrir';
   font-family: var(--font-mono);
   font-size: 0.58rem;
   letter-spacing: 0.14em;
